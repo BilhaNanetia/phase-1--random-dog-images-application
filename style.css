@@ -1,0 +1,121 @@
+ body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9fbe7; /* Light background color */
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px; /* Increase heading size */
+    margin-bottom: 20px; /* Add space after heading */
+  }
+  
+  #show-random-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4caf50; /* Green button color */
+    color: #fff; /* White text for better contrast */
+    transition: background-color 0.2s ease-in-out; /* Add hover effect */
+  }
+  
+  #show-random-button:hover {
+    background-color: #388e3c; /* Darken green button on hover */
+  }
+  
+  #image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Adjusts columns to fit the screen */
+    gap: 20px;
+  }
+
+    .image-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Ensures the images do not overflow */
+    background-color: #fff;  /* White background for each image item */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* subtle shadow for depth */
+    width: 100%;  /* Ensures all images have the same width */
+   }
+
+   .image-item img {
+    width: 100%;  /* Make image fill the container */
+    height: 250px;  /* Fixed height for all images */
+    object-fit: cover;  /* Ensures the images cover the container */
+   }
+  
+  #likes-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f5f5f5;  /* Light grey background for the likes section */
+  }
+  
+  #like-button {
+    border: none;
+    background-color: #FF0000; /* Red background colour for like button */
+    color: #fff;
+    padding: 8px 12px; /* Adjusted padding for better visibility */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; /* Add hover effect */
+  }
+  
+  #like-button:hover {
+    background-color: #D80000; /* Darken red on hover */
+  }
+  
+  .comments-section {
+    padding: 10px;
+    background-color: #f9f9f9;  /* Light grey background for comments section */
+  }
+  
+  .comment-input {
+    width: calc(100% - 90px);  /* Light grey background for comments section */
+    margin-right: 10px;
+  }
+  
+  .comment-button {
+    background-color: #2196f3; /* Blue button color */
+    color: #fff; /* White text for contrast */
+    padding: 8px 12px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; /* Hover effect */
+  }
+  
+  .comment-button:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+  }
+  
+  #breed-search {
+    display: block;
+    width: 100%;
+    padding: 12px; /* Adjusted padding for better appearance */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #search-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4caf50; /* Green button color */
+    color: #fff;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  #search-button:hover {
+    background-color: #388e3c;  /*Darker green on hover */
+  }
